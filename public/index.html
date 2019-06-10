@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <title>Balanced</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>This website is load balanced using 'least_conn' (least connected)</h2>
+        <h2>Press 'Get Name' and see which server is proxied</h2>
+        <div class="row">
+        <div class="panel">      
+            <a class="button ripple" id="auto-get-node-name">Toggle Auto</a>
+            <a class="button ripple" id="reset">Reset</a>
+            <a class="button ripple" id="get-node-name">API Request</a>
+            <a class="button ripple" href="http://127.0.0.1:8080">Visit Website 2</a>
+            <span class="node-name"></span>
+        </div>
+        </div>
+        <div class="display">
+            <div class="box">
+                <h2 id="s1">0</h2>
+	            <h4>Server-1</h4>
+            </div>
+            <div class="box">
+                <h2 id="s2">0</h2>
+                <h4>Server-2</h4>
+            </div>
+            <div class="box">
+                <h2 id="s3">0</h2>
+                <h4>Server-3</h4>
+            </div>
+        </div>
+        <div class="display">
+            <p class="info">API REQUESTS</p>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
