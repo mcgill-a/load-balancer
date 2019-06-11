@@ -70,7 +70,7 @@ button.addEventListener('click', (e) => {
     }
   });
 
-  req.open('GET', '/api/name');
+  req.open('GET', 'api/name');
   req.send();
 });
 

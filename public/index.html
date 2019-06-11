@@ -9,16 +9,18 @@
 </head>
 
 <body>
+    <div class="row">
+        <div class="panel">
+            <h2>Server API Responses</h2>
+        </div>
+    </div>
     <div class="container">
-        <h2>This website is load balanced using 'least_conn' (least connected)</h2>
-        <h2>Press 'Get Name' and see which server is proxied</h2>
         <div class="row">
         <div class="panel">      
             <a class="button ripple" id="auto-get-node-name">Toggle Auto</a>
             <a class="button ripple" id="reset">Reset</a>
             <a class="button ripple" id="get-node-name">API Request</a>
-            <a class="button ripple" href="http://127.0.0.1:8080">Visit Website 2</a>
-            <span class="node-name"></span>
+            <a class="button ripple" href="/">Home Page</a>
         </div>
         </div>
         <div class="display">
@@ -37,6 +39,9 @@
         </div>
         <div class="display">
             <p class="info">API REQUESTS</p>
+        </div>
+        <div class="display">
+            <span class="node-name"></span>
         </div>
     </div>
     <!-- Scripts -->
