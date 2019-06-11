@@ -51,15 +51,15 @@ button.addEventListener('click', (e) => {
     console.log(resp);
     document.querySelector('.node-name').innerHTML = resp.name;
     switch(resp.name) {
-	case "balanced-1":
+	case "server-1":
 	    temp = Number(s1.innerHTML) + 1;
 	    s1.innerHTML = temp;
 	    break;
-	case "balanced-2":
+	case "server-2":
             temp = Number(s2.innerHTML) + 1;
             s2.innerHTML = temp;
             break;
-	case "balanced-3":
+	case "server-3":
             temp = Number(s3.innerHTML) + 1;
             s3.innerHTML = temp;
             break;
