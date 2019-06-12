@@ -33,6 +33,7 @@ reset.addEventListener('click', (e) => {
   s1.innerHTML = 0;
   s2.innerHTML = 0;
   s3.innerHTML = 0;
+  document.querySelector('.node-name').innerHTML = "";
 });
 
 // Set up click listener for button
