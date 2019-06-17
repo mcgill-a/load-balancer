@@ -51,7 +51,7 @@ button.addEventListener('click', (e) => {
     const resp = JSON.parse(responseText);
     console.log(resp);
     document.querySelector('.node-name').innerHTML = resp.name;
-    switch(resp.name) {
+    switch(resp.name.toLowerCase()) {
 	case "server-1":
 	    temp = Number(s1.innerHTML) + 1;
 	    s1.innerHTML = temp;
